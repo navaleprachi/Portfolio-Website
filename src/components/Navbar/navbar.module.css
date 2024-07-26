@@ -1,0 +1,37 @@
+.navBar {
+  position: relative;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+
+/* .logo {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+} */
+
+.menuContainer {
+  display: flex;
+}
+
+.menuItems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0px 6px;
+}
