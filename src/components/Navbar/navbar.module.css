@@ -8,20 +8,6 @@
   color: white;
 }
 
-/* .logo {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-}
-
-.logo img {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
-} */
-
 .menuContainer {
   display: flex;
 }
