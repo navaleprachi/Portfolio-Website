@@ -63,7 +63,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "90 Bynner Street, Boston, MA 02130 ",
+  phoneNo: "+1(857)654-8312 ",
+  email: "navale.p@northeastern.edu",
 };
