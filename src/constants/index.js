@@ -1,6 +1,6 @@
-// import project1 from "../assets/projects/project-1.jpg";
-// import project2 from "../assets/projects/project-2.jpg";
-// import project3 from "../assets/projects/project-3.jpg";
+import project1 from "../assets/PlaymateHomePage.png";
+import project2 from "../assets/AmazonHub.png";
+import project3 from "../assets/PetApp-HomePage.png";
 // import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a dynamic and ambitious individual fueled by a deep passion for both design and development. With a solid foundation in computer science and a sharp eye for aesthetics, I am driven to craft captivating and efficient digital solutions that leave a lasting impression. As a graduate student in the field of Information Systems, I am eager to embark on a career journey as a software engineer/developer or front-end developer, where I can leverage my skills and creativity to create innovative solutions that exceed expectations.`;
@@ -26,33 +26,40 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    // image: project1,
+    title: "PlayMate Web Application",
+    image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Engineered a dynamic full-stack web development project for sports arena booking, which streamlined arena reservations for both individual and team activities. Leveraged React, Node.js, and Material UI to create intuitive user interfaces, while optimizing backend performance with MongoDB. This approach enhanced frontend accessibility and led to a 40% increase in booking activities.",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "Material-UI",
+      "MongoDB",
+      "HTTP Restful APIs",
+    ],
   },
   {
-    title: "Task Management App",
-    // image: project2,
+    title: "Amazon Hub App",
+    image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Figma"],
   },
   {
-    title: "Portfolio Website",
-    // image: project3,
+    title: "Pet Perfect: Pet Adoption and Care App",
+    image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Partnered with stakeholders to design a user-centric strategy for pet adoption, addressing key challenges in finding compatible companions. Developed initial wireframes and high-fidelity prototypes using Figma, iteratively refining them based on user feedback. This process enhanced the overall user experience and visual appeal, ensuring an intuitive and engaging interface.",
+    technologies: ["Figma"],
   },
-  {
-    title: "Blogging Platform",
-    // image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
+  // {
+  //   title: "Blogging Platform",
+  //   // image: project4,
+  //   description:
+  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
+  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+  // },
 ];
 
 export const CONTACT = {
