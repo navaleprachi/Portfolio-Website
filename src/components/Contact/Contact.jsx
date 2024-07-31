@@ -1,17 +1,44 @@
 import { CONTACT } from "../../constants";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <section id="contact">
       <div className="border-b border-neutral-900 pb-20">
-        <h1 className="mt-10 text-center text-4xl">Contact</h1>
-        <h2 className="mt-5 mb-10 text-center text-neutral-400">
+        <motion.h1
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mt-10 text-center text-4xl"
+        >
+          Contact
+        </motion.h1>
+        <motion.h2
+          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ y: 100, opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="mt-5 mb-10 text-center text-neutral-400"
+        >
           Feel free to reach out to me!
-        </h2>
+        </motion.h2>
         <div className="text-center tracking-tighter">
-          <p className="my-4">{CONTACT.address}</p>
-          <p className="my-4">{CONTACT.phoneNo}</p>
+          <motion.p
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: -100, opacity: 0 }}
+            transition={{ duration: 2 }}
+            className="my-4"
+          >
+            {CONTACT.address}
+          </motion.p>
+          <motion.p
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            transition={{ duration: 2 }}
+            className="my-4"
+          >
+            {CONTACT.phoneNo}
+          </motion.p>
           <a href="#" className="border-b">
             {CONTACT.email}
           </a>
