@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/Logo.png";
+import logo from "../../assets/PNLogo.svg";
 import styles from "./navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -17,9 +17,9 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navBar}>
-      <a href="#" className={styles.logo}>
-        Portfolio
-      </a>
+      <Link to="home" smooth={true} duration={500}>
+        <img className="cursor-pointer" src={logo} alt="Logo" />
+      </Link>
       <div className={styles.menuIcon} onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </div>
@@ -29,37 +29,52 @@ const Navbar = () => {
         }`}
       >
         <ul className={styles.menuItems}>
-          <li onClick={closeMenu} className="cursor-pointer">
+          <li
+            onClick={closeMenu}
+            className="cursor-pointer hover:text-purple-400"
+          >
             <Link to="about" smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li onClick={closeMenu} className="cursor-pointer">
+          <li
+            onClick={closeMenu}
+            className="cursor-pointer hover:text-purple-400"
+          >
             <Link to="skills" smooth={true} duration={500}>
               Skills
             </Link>
           </li>
-          <li onClick={closeMenu} className="cursor-pointer">
+          <li
+            onClick={closeMenu}
+            className="cursor-pointer hover:text-purple-400"
+          >
             <Link to="experience" smooth={true} duration={500}>
               Experience
             </Link>
           </li>
-          <li onClick={closeMenu} className="cursor-pointer">
+          <li
+            onClick={closeMenu}
+            className="cursor-pointer hover:text-purple-400"
+          >
             <Link to="projects" smooth={true} duration={500}>
               Projects
             </Link>
           </li>
-          <li onClick={closeMenu} className="cursor-pointer">
+          <li
+            onClick={closeMenu}
+            className="cursor-pointer hover:text-purple-400"
+          >
             <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>
           </li>
-          <li onClick={closeMenu} className="cursor-pointer">
+          <li onClick={closeMenu} className="cursor-pointer mr-5">
             <a
               href="https://github.com/navaleprachi"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 lg:ml-20 lg:border lg:border-gray-400 lg:rounded-xl lg:text-purple-400"
+              className="py-2 lg:px-5 lg:border lg:border-gray-400 lg:rounded-xl lg:text-purple-400 hover:text-white hover:border-purple-400"
             >
               GitHub Profile
             </a>
