@@ -1,18 +1,65 @@
 import { HERO_CONTENT } from "../../constants";
 import profileImage from "../../assets/ProfileImage2.svg";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
   const container = (delay) => ({
     hidden: { x: -100, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
   });
+
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const toRotate = [
+    "Frontend Developer",
+    "Software Engineer",
+    "UI/UX Designer",
+  ];
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(200 - Math.random() * 50);
+  const period = 1500;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta(100);
+    } else {
+      setDelta(200 - Math.random() * 50);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setDelta(200 - Math.random() * 50);
+    }
+  };
   return (
     <section id="home">
       <div className="border-b border-neutral-900 pb-4 lg:mb-35">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-1/2">
-            <div className="flex flex-col items-center lg:items-start">
+            <div className="flex flex-col lg:items-start">
               <motion.h1
                 variants={container(0)}
                 initial="hidden"
@@ -27,7 +74,7 @@ const Hero = () => {
                 animate="visible"
                 className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
               >
-                Frontend Developer
+                {text}
               </motion.span>
               <motion.p
                 variants={container(1)}
