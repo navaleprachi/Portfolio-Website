@@ -49,6 +49,14 @@ const Navbar = () => {
             onClick={closeMenu}
             className="cursor-pointer hover:text-purple-400"
           >
+            <Link to="education" smooth={true} duration={500}>
+              Education
+            </Link>
+          </li>
+          <li
+            onClick={closeMenu}
+            className="cursor-pointer hover:text-purple-400"
+          >
             <Link to="experience" smooth={true} duration={500}>
               Experience
             </Link>

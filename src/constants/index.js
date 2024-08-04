@@ -1,15 +1,37 @@
 import project1 from "../assets/Playmate.svg";
 import project2 from "../assets/AmazonHub.svg";
 import project3 from "../assets/PetApp.svg";
-// import project4 from "../assets/projects/project-4.jpg";
+import education1 from "../assets/NortheasternLogo.svg";
+import education2 from "../assets/SPPULogo.svg";
+import work from "../assets/InfosysLogo.svg";
 
 export const HERO_CONTENT = `I am a dynamic and ambitious individual fueled by a deep passion for both design and development. With a solid foundation in computer science and a sharp eye for aesthetics, I am driven to craft captivating and efficient digital solutions that leave a lasting impression. As a graduate student in the field of Information Systems, I am eager to embark on a career journey as a software engineer/developer or front-end developer, where I can leverage my skills and creativity to create innovative solutions that exceed expectations.`;
 
 export const ABOUT_TEXT = `As a dedicated software engineer currently pursuing a Master of Science in Information Systems at Northeastern University, I bring a strong foundation in front-end and back-end development. With hands-on experience in HTML, CSS, JavaScript, React, Python, and Java, I have successfully enhanced user engagement and optimized website performance through responsive design and efficient coding practices. My tenure at Infosys has honed my skills in creating robust automation test suites with Selenium and Cucumber, optimizing databases, and ensuring high-quality deliverables. Passionate about crafting intuitive and scalable web solutions, I am committed to driving innovation and delivering exceptional user experiences in dynamic, forward-thinking environments.`;
 
+export const EDUCATION = [
+  {
+    year: "September 2023 - Expected May 2025",
+    logo: education1,
+    university: "Northeastern University",
+    degree: "Master of Science in Information Systems",
+    description:
+      "I am currently pursuing a Master's in Information Systems at Northeastern University, Boston, MA, with an expected graduation date of May 2025. My coursework includes Web Design and User Experience, User Experience Design and Testing (UI/UX), Database Management and Design, and Application Engineering and Development. This program is equipping me with advanced skills in designing intuitive user interfaces, managing complex databases, and developing robust applications, all of which contribute to my expertise in creating seamless and impactful digital experiences.",
+  },
+  {
+    year: "August 2016 - May 2020",
+    logo: education2,
+    university: "Savitribai Phule Pune University",
+    degree: "Bachelor of Engineering in Computer Engineering ",
+    description:
+      "I graduated with a Bachelor's degree in Computer Engineering from Savitribai Phule Pune University, Pune, India, in May 2020. My coursework covered a broad range of topics, including Web Technology, Data Structures and Algorithms, Software Engineering and Project Management, Information Systems and Engineering Economics, Computer Networking, Machine Learning, and Cloud Computing. This foundation has provided me with a strong technical base and the skills necessary to tackle complex engineering challenges and contribute effectively to innovative technology solutions.",
+  },
+];
+
 export const EXPERIENCES = [
   {
     year: "July 2021 - August 2023",
+    logo: work,
     role: "Frontend Developer",
     company: "Infosys",
     description: `At Infosys, I specialize in creating responsive and efficient web pages using HTML, CSS, and JavaScript, which have boosted user engagement by 30%. With React.js, I develop scalable web solutions, cutting development time by 20%. Collaborating with cross-functional teams, I ensure seamless and intuitive user experiences. My focus on performance optimization has halved page load times, while my expertise in automated testing and code reviews has significantly reduced post-deployment bugs.`,
@@ -17,6 +39,7 @@ export const EXPERIENCES = [
   },
   {
     year: "March 2021 - June 2021",
+    logo: work,
     role: "System Engineer",
     company: "Infosys",
     description: `Developed comprehensive automation test suites for web applications using Selenium and Cucumber with Java, executing over 1000 test scenarios and markedly reducing manual testing efforts. Collaborated with developers to design and enhance MySQL databases, boosting query performance and data reliability. Integrated automated tests that identified and resolved more than 200 bugs during the development cycle.`,
