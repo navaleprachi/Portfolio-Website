@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../../constants";
-import profileImage from "../../assets/PrachiNavaleProfile.png";
+import profileImage from "../../assets/ProfileImage2.svg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
                 animate="visible"
                 className="pb-16 text-6xl font-thin tracking-light lg:mt-16 lg:text-6xl"
               >
-                Prachi Navale
+                Hi, I am Prachi Navale
               </motion.h1>
               <motion.span
                 variants={container(0.5)}
@@ -37,6 +37,15 @@ const Hero = () => {
               >
                 {HERO_CONTENT}
               </motion.p>
+              <a
+                href="https://drive.google.com/file/d/1cm2pt9NmSmyFFWo4QuJQw7LLbn_CICQr/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="px-4 py-2 mt-4 text-white bg-purple-500 rounded hover:bg-purple-700">
+                  View or Download Resume
+                </button>
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-1/3 lg:p-8 ml-auto">
@@ -45,7 +54,7 @@ const Hero = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.2 }}
-                style={{ height: "450px" }}
+                style={{ height: "500px" }}
                 src={profileImage}
                 alt="Profile Image"
               />

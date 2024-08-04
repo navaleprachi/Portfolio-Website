@@ -39,7 +39,10 @@ const Contact = () => {
           >
             {CONTACT.phoneNo}
           </motion.p>
-          <a href="#" className="border-b">
+          <a
+            href={`mailto:${CONTACT.email}?subject=Let's Discuss a Potential Opportunity&body=Hello, I would like to get in touch.`}
+            className="border-b hover:text-purple-400"
+          >
             {CONTACT.email}
           </a>
         </div>

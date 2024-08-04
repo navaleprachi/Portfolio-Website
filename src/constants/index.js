@@ -1,25 +1,25 @@
-import project1 from "../assets/PlaymateHomePage.png";
-import project2 from "../assets/AmazonHub.png";
-import project3 from "../assets/PetApp-HomePage.png";
+import project1 from "../assets/Playmate.svg";
+import project2 from "../assets/AmazonHub.svg";
+import project3 from "../assets/PetApp.svg";
 // import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `I am a dynamic and ambitious individual fueled by a deep passion for both design and development. With a solid foundation in computer science and a sharp eye for aesthetics, I am driven to craft captivating and efficient digital solutions that leave a lasting impression. As a graduate student in the field of Information Systems, I am eager to embark on a career journey as a software engineer/developer or front-end developer, where I can leverage my skills and creativity to create innovative solutions that exceed expectations.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `As a dedicated software engineer currently pursuing a Master of Science in Information Systems at Northeastern University, I bring a strong foundation in front-end and back-end development. With hands-on experience in HTML, CSS, JavaScript, React, Python, and Java, I have successfully enhanced user engagement and optimized website performance through responsive design and efficient coding practices. My tenure at Infosys has honed my skills in creating robust automation test suites with Selenium and Cucumber, optimizing databases, and ensuring high-quality deliverables. Passionate about crafting intuitive and scalable web solutions, I am committed to driving innovation and delivering exceptional user experiences in dynamic, forward-thinking environments.`;
 
 export const EXPERIENCES = [
   {
-    year: "June 2021 - August 2023",
-    role: "System Engineer",
+    year: "July 2021 - August 2023",
+    role: "Frontend Developer",
     company: "Infosys",
-    description: `At Infosys, I developed automated tests using TOSCA, achieving a 70% increase in script reusability and scalability while ensuring user accessibility through thorough debugging. I led automation training sessions, enhancing team proficiency by 40% and cutting manual testing time by 70%. My role involved precise defect logging in ALM, collaborating closely with developers, and addressing project challenges with efficient test automation and project management. By optimizing testing procedures, I improved workflow efficiency by 30% and contributed to agile methodologies and unified testing processes with developers and business analysts.`,
+    description: `At Infosys, I specialize in creating responsive and efficient web pages using HTML, CSS, and JavaScript, which have boosted user engagement by 30%. With React.js, I develop scalable web solutions, cutting development time by 20%. Collaborating with cross-functional teams, I ensure seamless and intuitive user experiences. My focus on performance optimization has halved page load times, while my expertise in automated testing and code reviews has significantly reduced post-deployment bugs.`,
     technologies: ["TOSCA", "ALM"],
   },
   {
     year: "March 2021 - June 2021",
-    role: "System Engineer Intern",
+    role: "System Engineer",
     company: "Infosys",
-    description: `Engaged in interdisciplinary team projects, leveraging expertise in Java, SQL and object oriented programming principles; utilizing automation testing tools Selenium, Cucumber to develop and deploy automated testing solutions, ensuring system's security, quality assurance and status validation. Facilitated troubleshooting sessions and cross-functional discussions, showcasing problem-solving abilities and technical proficiency in software development and documentation align with the project's vision`,
+    description: `Developed comprehensive automation test suites for web applications using Selenium and Cucumber with Java, executing over 1000 test scenarios and markedly reducing manual testing efforts. Collaborated with developers to design and enhance MySQL databases, boosting query performance and data reliability. Integrated automated tests that identified and resolved more than 200 bugs during the development cycle.`,
     technologies: ["HTML", "CSS", "Java", "mySQL"],
   },
 ];
@@ -36,30 +36,26 @@ export const PROJECTS = [
       "Express.js",
       "Material-UI",
       "MongoDB",
-      "HTTP Restful APIs",
+      "Restful APIs",
     ],
+    link: "https://github.com/navaleprachi/PlayMate-Web-Application",
   },
   {
     title: "Amazon Hub App",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
+      'In light of the instability and uncertainty surrounding the future of "X (formerly Twitter)," users are increasingly seeking a stable and reliable platform for social interaction. Recognizing this opportunity, I designed Amazon Hub, a feature that seamlessly integrates social engagement, content sharing, and a unique shopping experience within the existing Amazon ecosystem. This UI/UX design project on Figma aims to create a cohesive and enriching user experience, allowing users to connect with others and enjoy integrated shopping all in one place. Explore how Amazon Hub bridges the gap between social media and e-commerce, offering a dependable alternative for users.',
     technologies: ["Figma"],
+    link: "https://www.figma.com/proto/fhSxY4jqSkUjfwUTW0r1oJ/PrachiNavale_Spring24?page-id=934%3A2&type=design&node-id=1473-4890&t=zEZoGB5yIZweaDBN-0&scaling=scale-down&starting-point-node-id=1473%3A4886&content-scaling=fixed",
   },
   {
     title: "Pet Perfect: Pet Adoption and Care App",
     image: project3,
     description:
-      "Partnered with stakeholders to design a user-centric strategy for pet adoption, addressing key challenges in finding compatible companions. Developed initial wireframes and high-fidelity prototypes using Figma, iteratively refining them based on user feedback. This process enhanced the overall user experience and visual appeal, ensuring an intuitive and engaging interface.",
+      "Many individuals struggle to find an animal companion that seamlessly fits into their lifestyle and living situation. Challenges such as the lack of personalized guidance, uncertainty about pet care requirements, limited access to adoption resources, and concerns about long-term commitment often lead to compatibility issues, overwhelming decisions, and hesitation towards pet ownership. To address these challenges, I designed PetMatch, a UI/UX project on Figma, focused on providing users with tailored recommendations, comprehensive pet care information, and streamlined access to adoption resources. PetMatch aims to simplify the process of finding the perfect pet, ensuring a harmonious and fulfilling pet ownership experience.",
     technologies: ["Figma"],
+    link: "https://www.figma.com/proto/fhSxY4jqSkUjfwUTW0r1oJ/PrachiNavale_Spring24?page-id=409%3A2&node-id=409-684&t=DwWBhTPUz9fQuR2f-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=409%3A684",
   },
-  // {
-  //   title: "Blogging Platform",
-  //   // image: project4,
-  //   description:
-  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  // },
 ];
 
 export const CONTACT = {

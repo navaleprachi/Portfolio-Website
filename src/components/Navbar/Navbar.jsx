@@ -74,7 +74,7 @@ const Navbar = () => {
               href="https://github.com/navaleprachi"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2 lg:px-5 lg:border lg:border-gray-400 lg:rounded-xl lg:text-purple-400 hover:text-white hover:border-purple-400"
+              className="py-2 lg:px-5 lg:border-2 lg:border-purple-400 lg:rounded-xl lg:text-purple-400 hover:text-white hover:bg-purple-400"
             >
               GitHub Profile
             </a>
