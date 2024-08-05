@@ -37,7 +37,13 @@ const Projects = () => {
                 className="w-full max-w-xl lg:w-3/4"
               >
                 <h6 className="mb-2 font-semibold">{project.title}</h6>
-                <p className="mb-4 text-neutral-400">{project.description}</p>
+                <ul className="mb-4 text-neutral-400 list-disc pl-5">
+                  {project.description.map((point, index) => (
+                    <li key={index} className="pl-2">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}

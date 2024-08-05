@@ -27,8 +27,8 @@ const Education = () => {
                 </p>
                 <img
                   src={education.logo}
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                   className="mt-5 mb-5"
                   alt={education.university}
                 />
@@ -45,7 +45,14 @@ const Education = () => {
                   {education.degree}
                 </h6>
 
-                <p className="mb-4 text-neutral-400">{education.description}</p>
+                {/* <p className="mb-4 text-neutral-400">{education.description}</p> */}
+                <ul className="mb-4 text-neutral-400 list-disc pl-5">
+                  {education.description.map((point, index) => (
+                    <li key={index} className="pl-2">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
               </motion.div>
             </div>
           ))}
