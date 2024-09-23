@@ -12,8 +12,8 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Frontend Developer",
     "Software Engineer",
+    "Frontend Developer",
     "UI/UX Designer",
   ];
   const [text, setText] = useState("");
@@ -73,6 +73,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+                style={{ height: "40px", display: "inline-block" }}
               >
                 {text}
               </motion.span>
@@ -80,12 +81,12 @@ const Hero = () => {
                 variants={container(1)}
                 initial="hidden"
                 animate="visible"
-                className="my-2 max-w-xl py-6 font-light tracking-tighter"
+                className="mt-1 my-2 max-w-xl py-6 font-light tracking-tighter"
               >
                 {HERO_CONTENT}
               </motion.p>
               <a
-                href="https://drive.google.com/file/d/1HVzD7O4ShKoHwAy-H4uzIC6PABjtydD5/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1YhiKI1YgTmJukPKipeVLUNUpHtYJLM5s/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -17,7 +17,7 @@ export const EDUCATION = [
     degree: "Master of Science in Information Systems",
     description: [
       "Currently pursuing a Master's in Information Systems at Northeastern University, Boston, MA, with an expected graduation date of May 2025",
-      "Coursework includes Web Design and User Experience, User Experience Design and Testing (UI/UX), Database Management and Design, and Application Engineering and Development",
+      "Coursework includes Web Design and User Experience, User Experience Design and Testing (UI/UX), Database Management and Design, Program structure and Algorithm, Data Science and Application Engineering and Development",
       "Equipped with advanced skills in designing intuitive user interfaces, managing complex databases, and developing robust applications, all contributing to expertise in creating seamless and impactful digital experiences",
     ],
   },
@@ -38,7 +38,7 @@ export const EXPERIENCES = [
   {
     year: "July 2021 - August 2023",
     logo: work,
-    role: "Frontend Developer",
+    role: "Software Engineer",
     company: "Infosys",
     description: [
       "At Infosys, I specialize in creating responsive and efficient web pages using HTML, CSS, and JavaScript, which have boosted user engagement by 30%",
@@ -54,7 +54,7 @@ export const EXPERIENCES = [
     role: "System Engineer",
     company: "Infosys",
     description: [
-      "Developed comprehensive automation test suites for web applications using Selenium and Cucumber with Java, executing over 1000 test scenarios and markedly reducing manual testing efforts",
+      "Developed comprehensive automation test suites for web applications using Selenium and Cucumber with Java, executing over 1000 test scenarios, cutting manual testing efforts by 70% and speeding up deployment",
       "Collaborated with developers to design and enhance MySQL databases, boosting query performance and data reliability. Integrated automated tests that identified and resolved more than 200 bugs during the development cycle",
     ],
     technologies: ["HTML", "CSS", "Java", "mySQL"],
