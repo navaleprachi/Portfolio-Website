@@ -36,28 +36,41 @@ export const EDUCATION = [
 
 export const EXPERIENCES = [
   {
-    year: "July 2021 - August 2023",
+    year: "September 2021 - August 2023",
     logo: work,
     role: "Software Engineer",
     company: "Infosys",
     description: [
-      "At Infosys, I specialize in creating responsive and efficient web pages using HTML, CSS, and JavaScript, which have boosted user engagement by 30%",
-      "With React.js, I develop scalable web solutions, cutting development time by 20%",
-      "Collaborating with cross-functional teams, I ensure seamless and intuitive user experiences",
-      "My focus on performance optimization has halved page load times, while my expertise in automated testing and code reviews has significantly reduced post-deployment bugs",
+      "Built responsive, cross-browser-compatible web applications using ReactJS and modern front-end technologies.",
+      "Streamlined state management with React Hooks and Redux, enhancing data handling efficiency by 30%.",
+      "Transformed UI/UX designs into reusable components, improving consistency across applications.",
+      "Boosted website performance by 35% through lazy loading and code optimization techniques.",
+      "Implemented automated workflows using CI/CD pipelines, reducing deployment time by 40%.",
+      "Collaborated in Agile teams, mentoring junior developers and maintaining code quality through regular reviews.",
     ],
-    technologies: ["TOSCA", "ALM"],
+    technologies: [
+      "ReactJS",
+      "Redux",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub Actions",
+      "CI/CD",
+    ],
   },
   {
-    year: "March 2021 - June 2021",
+    year: "March 2021 - August 2021",
     logo: work,
     role: "System Engineer",
     company: "Infosys",
     description: [
-      "Developed comprehensive automation test suites for web applications using Selenium and Cucumber with Java, executing over 1000 test scenarios, cutting manual testing efforts by 70% and speeding up deployment",
-      "Collaborated with developers to design and enhance MySQL databases, boosting query performance and data reliability. Integrated automated tests that identified and resolved more than 200 bugs during the development cycle",
+      "Developed automated test cases using Selenium and TOSCA, reducing manual testing efforts significantly.",
+      "Conducted regression testing to identify and document defects, ensuring high-quality software delivery.",
+      "Collaborated with developers to resolve critical bugs, improving issue resolution times by 25%.",
+      "Optimized testing workflows, reducing test suite execution time by 30% through reusable scripts.",
+      "Documented comprehensive test plans and cases to streamline the QA process.",
     ],
-    technologies: ["HTML", "CSS", "Java", "mySQL"],
+    technologies: ["Selenium", "TOSCA", "MySQL", "Java", "ALM"],
   },
 ];
 
