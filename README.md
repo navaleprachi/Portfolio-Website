@@ -32,5 +32,3 @@ The website is live and accessible at:
 - **Icons and Fonts**:
   - Tailwind’s typography and a curated selection of open-source icons and fonts.
 
----
-
