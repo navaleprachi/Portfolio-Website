@@ -86,7 +86,7 @@ const Hero = () => {
                 {HERO_CONTENT}
               </motion.p>
               <a
-                href="https://drive.google.com/file/d/1uyCiCTcCzH5lF9ezUxxYa2SRqNOfmj_B/view?usp=sharing"
+                href="https://drive.google.com/file/d/19a1B8simJE4toTtTZgle9S4Y2AtWFmZc/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
