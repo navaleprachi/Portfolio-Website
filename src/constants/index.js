@@ -150,7 +150,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "90 Bynner Street, Boston, MA 02130 ",
+  address: "Boston, MA 02130 ",
   phoneNo: "+1(857)654-8312 ",
   email: "navale.p@northeastern.edu",
 };

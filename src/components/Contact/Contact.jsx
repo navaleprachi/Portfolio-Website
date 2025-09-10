@@ -69,7 +69,7 @@ const Contact = () => {
               />
             </a>
             <a
-              href="https://www.linkedin.com/in/prachi-navale-2a1971170/"
+              href="https://www.linkedin.com/in/prachi-navale/"
               target="_blank"
               rel="noopener noreferrer"
             >
