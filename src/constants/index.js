@@ -4,7 +4,7 @@ import project3 from "../assets/PetApp.svg";
 import education1 from "../assets/NortheasternLogo.svg";
 import education2 from "../assets/SPPULogo.svg";
 import work from "../assets/InfosysLogo.svg";
-import work1 from "../assets/3noon-logo-green.png";
+import work1 from "../assets/nooonapp_logo.jpeg";
 
 export const HERO_CONTENT = `I am a dynamic and ambitious individual fueled by a deep passion for both design and development. With a solid foundation in computer science and a sharp eye for aesthetics, I am driven to craft captivating and efficient digital solutions that leave a lasting impression. As a graduate student in the field of Information Systems, I am eager to embark on a career journey as a software engineer/developer or front-end developer, where I can leverage my skills and creativity to create innovative solutions that exceed expectations.`;
 
@@ -56,7 +56,7 @@ export const EXPERIENCES = [
       "Tailwind CSS",
       "Supabase",
       "BitBucket",
-      "Stripe API",
+      "Stripe",
     ],
   },
   {
