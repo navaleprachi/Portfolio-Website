@@ -12,8 +12,8 @@ const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Software Engineer",
     "Frontend Developer",
+    "Software Engineer",
     "UI/UX Designer",
   ];
   const [text, setText] = useState("");
@@ -83,7 +83,7 @@ const Hero = () => {
                 animate="visible"
                 className="mt-1 my-2 max-w-xl py-6 font-light tracking-tighter"
               >
-                {HERO_CONTENT}
+                <p className="whitespace-pre-line">{HERO_CONTENT}</p>
               </motion.p>
               <a
                 href="https://drive.google.com/file/d/1k9ofHYsfejPX5Gj2ZduRu70QTwlR1V9z/view?usp=drive_link"

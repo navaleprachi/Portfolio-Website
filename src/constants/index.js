@@ -6,20 +6,27 @@ import education2 from "../assets/SPPULogo.svg";
 import work from "../assets/InfosysLogo.svg";
 import work1 from "../assets/nooonapp_logo.jpeg";
 
-export const HERO_CONTENT = `I am a dynamic and ambitious individual fueled by a deep passion for both design and development. With a solid foundation in computer science and a sharp eye for aesthetics, I am driven to craft captivating and efficient digital solutions that leave a lasting impression. As a graduate student in the field of Information Systems, I am eager to embark on a career journey as a software engineer/developer or front-end developer, where I can leverage my skills and creativity to create innovative solutions that exceed expectations.`;
+export const HERO_CONTENT = `“Building human-centered digital experiences with React, Next.js, and great design.”
 
-export const ABOUT_TEXT = `As a dedicated software engineer currently pursuing a Master of Science in Information Systems at Northeastern University, I bring a strong foundation in front-end and back-end development. With hands-on experience in HTML, CSS, JavaScript, React, Python, and Java, I have successfully enhanced user engagement and optimized website performance through responsive design and efficient coding practices. My tenure at Infosys has honed my skills in creating robust automation test suites with Selenium and Cucumber, optimizing databases, and ensuring high-quality deliverables. Passionate about crafting intuitive and scalable web solutions, I am committed to driving innovation and delivering exceptional user experiences in dynamic, forward-thinking environments.`;
+\nI’m a passionate frontend engineer with a strong foundation in computer science and a keen eye for design. Recently graduated with a Master’s in Information Systems from Northeastern University, I specialize in creating scalable, responsive, and visually engaging web applications. With hands-on experience in React, TypeScript, and modern UI frameworks, I thrive at the intersection of design and development crafting solutions that not only perform seamlessly but also leave a lasting impression.`;
+
+export const ABOUT_TEXT = `I’m Prachi Navale, a Frontend Engineer and recent Master’s graduate in Information Systems from Northeastern University (May 2025). I specialize in building secure, scalable, and intuitive web applications that balance performance with exceptional user experience.
+
+\nMy journey began at Infosys, where I crafted responsive UIs and strengthened accessibility for global clients, and has grown through projects like PlayMate, a full-stack sports booking platform, and a Smart Student Life Manager iOS app, blending creativity with problem-solving to make everyday experiences smoother. Currently, at Nooon, I’m shaping the future of digital marketplaces by building seamless subscription and payment flows with React, Next.js, and Stripe.
+
+\nBeyond the code, I’m passionate about designing human-centered products, experimenting with Web3 and emerging tech, and collaborating with teams that thrive on innovation. Whether it’s optimizing a checkout flow or bringing a UI concept to life, I’m driven by the challenge of turning ideas into impactful digital experiences.`;
 
 export const EDUCATION = [
   {
-    year: "September 2023 - Expected May 2025",
+    year: "September 2023 - May 2025",
     logo: education1,
     university: "Northeastern University",
     degree: "Master of Science in Information Systems",
     description: [
-      "Currently pursuing a Master's in Information Systems at Northeastern University, Boston, MA, with an expected graduation date of May 2025",
-      "Coursework includes Web Design and User Experience, User Experience Design and Testing (UI/UX), Database Management and Design, Program structure and Algorithm, Data Science and Application Engineering and Development",
-      "Equipped with advanced skills in designing intuitive user interfaces, managing complex databases, and developing robust applications, all contributing to expertise in creating seamless and impactful digital experiences",
+      "Specialized in software development, front-end engineering, and UI/UX design, blending technical expertise with design thinkin.",
+      "Completed hands-on projects using React, Node.js, MongoDB, and Redux, delivering scalable and user-friendly web applications",
+      "Collaborated on academic and real-world projects, emphasizing agile methodologies, design systems, and cross-functional teamwork",
+      "Graduate Teaching Assistant for Programs, Structure, and Algorithm — mentored students and clarified complex concepts, enhancing learning outcomes",
     ],
   },
   {
@@ -28,9 +35,10 @@ export const EDUCATION = [
     university: "Savitribai Phule Pune University",
     degree: "Bachelor of Engineering in Computer Engineering ",
     description: [
-      "Graduated with a Bachelor's degree in Computer Engineering from Savitribai Phule Pune University, Pune, India, in May 2020",
-      "Coursework covered Web Technology, Data Structures and Algorithms, Software Engineering and Project Management, Information Systems and Engineering Economics, Computer Networking, Machine Learning, and Cloud Computing",
-      "This foundation provided a strong technical base and the skills necessary to tackle complex engineering challenges and contribute effectively to innovative technology solutions",
+      "Graduated with a Bachelor's degree in Computer Engineering, building a strong foundation in software development and computing principles",
+      "Completed projects and coursework in Web Technologies, Data Structures & Algorithms, Software Engineering, Computer Networking, Machine Learning, and Cloud Computing",
+      "Developed problem-solving, programming, and project management skills, enabling effective contribution to complex engineering and technology solutions",
+      "Collaborated on team-based projects, emphasizing agile methodologies, design implementation, and practical application of theoretical concepts",
     ],
   },
 ];
@@ -65,12 +73,12 @@ export const EXPERIENCES = [
     role: "Software Engineer - Frontend",
     company: "Infosys",
     description: [
-      "Engineered modular, high-performance React components to enhance scalability and reduce UI duplication.",
-      "Improved app load speed and time-to-interactive by 40% by integrating Next.js dynamic imports and optimizing bundle sizes.",
-      "Collaborated with cross-functional teams to translate Figma designs into accessible, responsive interfaces meeting WCAG 2.1 standards.",
-      "Integrated RESTful APIs to enable real-time data sync and improve UI reliability for thousands of users.",
-      "Implemented GitHub Actions for CI/CD, accelerating release cycles and reducing deployment-related bugs by over 90%.",
-      "Enhanced test coverage to 85% using Jest and React Testing Library, decreasing production issues by 40%.",
+      "Engineered scalable React and TypeScript components, ensuring reusability and performance across client projects",
+      "Translated Figma designs into responsive, accessible interfaces compliant with WCAG 2.1 standards",
+      "Integrated RESTful APIs to deliver real-time data and reliable user interactions",
+      "Improved app responsiveness and reduced bundle sizes with Next.js optimization techniques",
+      "Automated deployments with GitHub Actions, accelerating release cycles and reducing manual errors",
+      "Strengthened testing coverage with Jest and React Testing Library, raising overall product quality",
     ],
     technologies: [
       "React",
@@ -88,11 +96,11 @@ export const EXPERIENCES = [
     role: "Systems Engineer - UI developer",
     company: "Infosys",
     description: [
-      "Developed internal UI pages with HTML, CSS, and vanilla JavaScript, improving layout consistency across platforms.",
-      "Resolved 10+ browser compatibility issues across Chrome, Safari, and Firefox, increasing cross-device reliability.",
-      "Built foundational React components in a shared codebase, improving readability and maintainability.",
-      "Collaborated with QA to identify UI regressions and supported defect triaging for faster resolution.",
-      "Streamlined testing by enhancing test data reuse and validating UI flows through interactive debug tools.",
+      "Developed responsive web interfaces using HTML, CSS, and JavaScript, ensuring cross-browser compatibility",
+      "Built foundational React components to streamline development and improve maintainability",
+      "Partnered with QA teams to troubleshoot UI regressions and enhance defect resolution speed",
+      "Resolved browser rendering issues, improving consistency across Chrome, Safari, and Firefox",
+      "Enhanced UI reliability through debugging tools and validation of user flows",
     ],
     technologies: [
       "React",
