@@ -4,6 +4,7 @@ import project3 from "../assets/PetApp.svg";
 import education1 from "../assets/NortheasternLogo.svg";
 import education2 from "../assets/SPPULogo.svg";
 import work from "../assets/InfosysLogo.svg";
+import work1 from "../assets/3noon-logo-green.png";
 
 export const HERO_CONTENT = `I am a dynamic and ambitious individual fueled by a deep passion for both design and development. With a solid foundation in computer science and a sharp eye for aesthetics, I am driven to craft captivating and efficient digital solutions that leave a lasting impression. As a graduate student in the field of Information Systems, I am eager to embark on a career journey as a software engineer/developer or front-end developer, where I can leverage my skills and creativity to create innovative solutions that exceed expectations.`;
 
@@ -35,6 +36,29 @@ export const EDUCATION = [
 ];
 
 export const EXPERIENCES = [
+  {
+    year: "July 2025 - Present",
+    logo: work1,
+    role: "Frontend Developer",
+    company: "Nooon",
+    description: [
+      "Contributing to the development of Nooon’s B2B marketplace platform, focused on connecting hotels with influencer marketing opportunities",
+      "Building responsive, performant React components with Tailwind CSS to deliver a clean, intuitive user interface for businesses and creators",
+      "Collaborating closely with product and design teams to translate wireframes into engaging, user-friendly experiences",
+      "Integrating API-driven features to streamline booking and partnership workflows between hotels and influencers",
+      "Enhancing platform usability with smooth animations, accessibility improvements, and optimized navigation",
+      "Actively participating in agile sprints, code reviews, and knowledge-sharing to improve overall engineering quality",
+    ],
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "BitBucket",
+      "Stripe API",
+    ],
+  },
   {
     year: "September 2021 - August 2023",
     logo: work,
