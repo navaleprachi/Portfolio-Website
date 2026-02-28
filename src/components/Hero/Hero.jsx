@@ -86,7 +86,7 @@ const Hero = () => {
                 <p className="whitespace-pre-line">{HERO_CONTENT}</p>
               </motion.p>
               <a
-                href="https://drive.google.com/file/d/1k9ofHYsfejPX5Gj2ZduRu70QTwlR1V9z/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1pCWShGU1MxD0zjWyPTD4BXZWLiyLd9wG/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
