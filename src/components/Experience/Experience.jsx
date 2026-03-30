@@ -18,7 +18,6 @@ const Experience = () => {
         </motion.h2>
 
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-0 px-0">
-
           {/* Tab list */}
           <div className="relative flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-neutral-800 shrink-0">
             {/* Sliding active indicator */}
@@ -36,9 +35,10 @@ const Experience = () => {
                 key={index}
                 onClick={() => setActive(index)}
                 className={`relative px-4 md:px-6 py-3 md:py-4 text-sm text-left whitespace-nowrap md:whitespace-normal transition-colors duration-200 border-b-2 md:border-b-0 md:border-l-2
-                  ${active === index
-                    ? "text-purple-400 border-purple-400 bg-purple-500/5"
-                    : "text-neutral-500 border-transparent hover:text-neutral-200 hover:bg-white/5"
+                  ${
+                    active === index
+                      ? "text-purple-400 border-purple-400 bg-purple-500/5"
+                      : "text-neutral-500 border-transparent hover:text-neutral-200 hover:bg-white/5"
                   }`}
               >
                 {exp.company}
@@ -51,10 +51,10 @@ const Experience = () => {
             <AnimatePresence mode="wait">
               <motion.div
                 key={active}
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -16 }}
-                transition={{ duration: 0.25, ease: "easeInOut" }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.18, ease: "easeInOut" }}
               >
                 {/* Role + company + year */}
                 <div className="flex items-center gap-4 mb-1 flex-wrap">
@@ -81,31 +81,25 @@ const Experience = () => {
                 {/* Description */}
                 <ul className="mt-5 space-y-3">
                   {EXPERIENCES[active].description.map((point, i) => (
-                    <motion.li
+                    <li
                       key={i}
-                      initial={{ opacity: 0, x: -10 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: i * 0.06, duration: 0.3 }}
                       className="flex gap-3 text-sm text-neutral-400 leading-relaxed"
                     >
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
                       {point}
-                    </motion.li>
+                    </li>
                   ))}
                 </ul>
 
                 {/* Tech tags */}
                 <div className="flex flex-wrap gap-2 mt-6">
                   {EXPERIENCES[active].technologies.map((tech, i) => (
-                    <motion.span
+                    <span
                       key={i}
-                      initial={{ opacity: 0, scale: 0.85 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.2 + i * 0.05 }}
                       className="px-3 py-1 text-xs rounded-full border border-purple-500/30 text-purple-300 bg-purple-500/10"
                     >
                       {tech}
-                    </motion.span>
+                    </span>
                   ))}
                 </div>
               </motion.div>

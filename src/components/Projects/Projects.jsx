@@ -4,9 +4,9 @@ import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slideVariants = {
-  enter: (dir) => ({ x: dir > 0 ? 500 : -500, opacity: 0 }),
+  enter: (dir) => ({ x: dir > 0 ? "100%" : "-100%", opacity: 0 }),
   center: { x: 0, opacity: 1 },
-  exit: (dir) => ({ x: dir > 0 ? -500 : 500, opacity: 0 }),
+  exit: (dir) => ({ x: dir > 0 ? "-100%" : "100%", opacity: 0 }),
 };
 
 const Projects = () => {
