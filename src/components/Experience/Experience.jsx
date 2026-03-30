@@ -1,11 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import { EXPERIENCES } from "../../constants";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Experience = () => {
+  const [active, setActive] = useState(0);
+
   return (
     <section id="experience">
-      <div className="border-b border-neutral-900 pb-4">
+      <div className="border-b border-neutral-900 pb-20">
         <motion.h2
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
@@ -14,53 +16,101 @@ const Experience = () => {
         >
           Experience
         </motion.h2>
-        <div>
-          {EXPERIENCES.map((experience, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-              <motion.div
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: -100, opacity: 0 }}
-                transition={{ duration: 1 }}
-                className="w-full lg:w-1/4 lg:flex lg:flex-col lg:items-center"
+
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-0 px-0">
+
+          {/* Tab list */}
+          <div className="relative flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l border-neutral-800 shrink-0">
+            {/* Sliding active indicator */}
+            <motion.div
+              className="hidden md:block absolute left-0 w-0.5 bg-purple-400 rounded-full"
+              animate={{
+                top: `${active * 56}px`,
+                height: "56px",
+              }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            />
+
+            {EXPERIENCES.map((exp, index) => (
+              <button
+                key={index}
+                onClick={() => setActive(index)}
+                className={`relative px-4 md:px-6 py-3 md:py-4 text-sm text-left whitespace-nowrap md:whitespace-normal transition-colors duration-200 border-b-2 md:border-b-0 md:border-l-2
+                  ${active === index
+                    ? "text-purple-400 border-purple-400 bg-purple-500/5"
+                    : "text-neutral-500 border-transparent hover:text-neutral-200 hover:bg-white/5"
+                  }`}
               >
-                <p className="mb-2 text-sm text-neutral-400">
-                  {experience.year}
-                </p>
-                <img
-                  src={experience.logo}
-                  width={80}
-                  height={80}
-                  className="mt-5 mb-5"
-                  alt={experience.university}
-                />
-              </motion.div>
+                {exp.company}
+              </button>
+            ))}
+          </div>
+
+          {/* Content panel */}
+          <div className="flex-1 md:pl-12 pt-4 md:pt-0 min-h-[360px]">
+            <AnimatePresence mode="wait">
               <motion.div
-                whileInView={{ x: 0, opacity: 1 }}
-                initial={{ x: 100, opacity: 0 }}
-                transition={{ duration: 1 }}
-                className="w-full max-w-xl lg:w-3/4"
+                key={active}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -16 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
               >
-                <h6 className="mb-2 font-semibold">
-                  {experience.role} -{" "}
-                  <span className="text-sm text-purple-200">
-                    {experience.company}
-                  </span>
-                </h6>
-                <ul className="mb-4 text-neutral-400 list-disc pl-5">
-                  {experience.description.map((point, index) => (
-                    <li key={index} className="pl-2">
+                {/* Role + company + year */}
+                <div className="flex items-center gap-4 mb-1 flex-wrap">
+                  <div className="w-9 h-9 rounded-lg overflow-hidden bg-neutral-800 flex items-center justify-center shrink-0">
+                    <img
+                      src={EXPERIENCES[active].logo}
+                      alt={EXPERIENCES[active].company}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-neutral-100">
+                      {EXPERIENCES[active].role}{" "}
+                      <span className="text-purple-400">
+                        @ {EXPERIENCES[active].company}
+                      </span>
+                    </h3>
+                    <p className="text-xs text-neutral-500 mt-0.5 font-mono tracking-wide">
+                      {EXPERIENCES[active].year}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <ul className="mt-5 space-y-3">
+                  {EXPERIENCES[active].description.map((point, i) => (
+                    <motion.li
+                      key={i}
+                      initial={{ opacity: 0, x: -10 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: i * 0.06, duration: 0.3 }}
+                      className="flex gap-3 text-sm text-neutral-400 leading-relaxed"
+                    >
+                      <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
                       {point}
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
-                {experience.technologies.map((tech, index) => (
-                  <span className="mr-2 mt-4 bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-700">
-                    {tech}
-                  </span>
-                ))}
+
+                {/* Tech tags */}
+                <div className="flex flex-wrap gap-2 mt-6">
+                  {EXPERIENCES[active].technologies.map((tech, i) => (
+                    <motion.span
+                      key={i}
+                      initial={{ opacity: 0, scale: 0.85 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.2 + i * 0.05 }}
+                      className="px-3 py-1 text-xs rounded-full border border-purple-500/30 text-purple-300 bg-purple-500/10"
+                    >
+                      {tech}
+                    </motion.span>
+                  ))}
+                </div>
               </motion.div>
-            </div>
-          ))}
+            </AnimatePresence>
+          </div>
         </div>
       </div>
     </section>

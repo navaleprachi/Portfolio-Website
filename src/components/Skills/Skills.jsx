@@ -2,26 +2,28 @@ import { RiReactjsLine } from "react-icons/ri";
 import {
   FaHtml5,
   FaCss3Alt,
-  FaJava,
   FaNodeJs,
   FaPython,
   FaFigma,
   FaGit,
   FaGithub,
-  FaBug,
+  FaAws,
+  FaDocker,
 } from "react-icons/fa";
 import {
-  SiTailwindcss,
   SiJavascript,
   SiTypescript,
-  SiCplusplus,
-  SiMysql,
+  SiNextdotjs,
   SiMongodb,
-  SiVisualstudiocode,
+  SiExpress,
+  SiFastapi,
+  SiSupabase,
+  SiOpenai,
+  SiStripe,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { useState } from "react";
-import { animate, motion } from "framer-motion";
+import { TbApi } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const iconVariants = (duration) => ({
@@ -36,6 +38,7 @@ const Skills = () => {
       },
     },
   });
+
   return (
     <section id="skills">
       <div className="border-b border-neutral-800 pb-24">
@@ -47,47 +50,45 @@ const Skills = () => {
         >
           Skills
         </motion.h2>
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {/* Frontend */}
           <motion.div
             whileInView={{ x: 0, opacity: 1 }}
             initial={{ x: -100, opacity: 0 }}
             transition={{ duration: 1.5 }}
-            className="border rounded-2xl border-neutral-500 px-10 py-10"
+            className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 sm:px-8 py-6 sm:py-8 h-auto md:h-[420px] flex flex-col"
           >
             <div className="text-center text-2xl font-bold mb-10">Frontend</div>
-            <div
-              className="flex flex-wrap items-center justify-center gap-4"
-              style={{ maxWidth: 500 }}
-            >
+            <div className="flex flex-wrap items-center justify-center gap-3 flex-1 content-start">
               <motion.div
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <RiReactjsLine className="text-4xl text-cyan-700" /> React
+                <RiReactjsLine className="text-4xl text-cyan-400" /> React
               </motion.div>
               <motion.div
                 variants={iconVariants(3)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <FaHtml5 className="text-4xl text-orange-700" /> HTML
+                <SiTypescript className="text-4xl text-blue-500" /> TypeScript
               </motion.div>
               <motion.div
-                variants={iconVariants(5)}
+                variants={iconVariants(4)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <FaCss3Alt className="text-4xl text-blue-700" /> CSS
+                <SiNextdotjs className="text-4xl text-neutral-200" /> Next.js
               </motion.div>
               <motion.div
                 variants={iconVariants(6)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
                 <SiJavascript className="text-4xl text-yellow-400" /> JavaScript
               </motion.div>
@@ -95,151 +96,192 @@ const Skills = () => {
                 variants={iconVariants(2)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <SiTypescript className="text-4xl text-blue-600" /> TypeScript
-              </motion.div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            whileInView={{ x: 0, opacity: 1 }}
-            initial={{ x: 100, opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            className="border rounded-2xl border-neutral-500 px-10 py-10"
-          >
-            <div className="text-center text-2xl font-bold mb-10">Backend</div>
-            <div
-              className="flex flex-wrap items-center justify-center gap-4"
-              style={{ maxWidth: 500 }}
-            >
-              <motion.div
-                variants={iconVariants(2.5)}
-                initial="initial"
-                animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
-              >
-                <FaPython className="text-4xl text-[#3776AB]" /> Python
-              </motion.div>
-              <motion.div
-                variants={iconVariants(3)}
-                initial="initial"
-                animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
-              >
-                <FaJava className="text-4xl text-[#007396]" /> Java
+                <FaHtml5 className="text-4xl text-orange-500" /> HTML5
               </motion.div>
               <motion.div
                 variants={iconVariants(5)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <SiCplusplus className="text-4xl text-[#00599C]" /> C++
+                <FaCss3Alt className="text-4xl text-blue-400" /> CSS3
               </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Backend & Data */}
+          <motion.div
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 sm:px-8 py-6 sm:py-8 h-auto md:h-[420px] flex flex-col"
+          >
+            <div className="text-center text-2xl font-bold mb-10">
+              Backend & Data
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-3 flex-1 content-start">
               <motion.div
-                variants={iconVariants(6)}
+                variants={iconVariants(3)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
                 <FaNodeJs className="text-4xl text-green-500" /> Node.js
               </motion.div>
               <motion.div
-                variants={iconVariants(4)}
-                initial="initial"
-                animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
-              >
-                <FaNodeJs className="text-4xl text-green-600" /> Express.js
-              </motion.div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            whileInView={{ x: 0, opacity: 1 }}
-            initial={{ x: -100, opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            className="border rounded-2xl border-neutral-500 px-10 py-10"
-          >
-            <div className="text-center text-2xl font-bold mb-10">Database</div>
-            <div
-              className="flex flex-wrap items-center justify-center gap-4"
-              style={{ maxWidth: 500 }}
-            >
-              <motion.div
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <SiMysql className="text-4xl text-blue-500" /> MySql
+                <SiFastapi className="text-4xl text-teal-400" /> FastAPI
+              </motion.div>
+              <motion.div
+                variants={iconVariants(4)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <SiExpress className="text-4xl text-neutral-300" /> Express.js
+              </motion.div>
+              <motion.div
+                variants={iconVariants(2)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <TbApi className="text-4xl text-purple-400" /> REST API
               </motion.div>
               <motion.div
                 variants={iconVariants(5)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <SiMongodb className="text-4xl text-green-500" /> MongoDB
+                <BiLogoPostgresql className="text-4xl text-sky-500" />{" "}
+                PostgreSQL
+              </motion.div>
+              <motion.div
+                variants={iconVariants(3.5)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <SiMongodb className="text-4xl text-green-400" /> MongoDB
+              </motion.div>
+              <motion.div
+                variants={iconVariants(2.8)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <SiSupabase className="text-4xl text-emerald-400" /> Supabase
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* AI & GenAI */}
+          <motion.div
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: -100, opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="rounded-2xl border border-purple-500/40 bg-gradient-to-br from-purple-500/10 via-pink-500/5 to-white/5 backdrop-blur-sm px-6 sm:px-8 py-6 sm:py-8 h-auto md:h-[420px] flex flex-col"
+          >
+            <div className="flex items-center justify-center gap-2 mb-10">
+              <div className="text-center text-2xl font-bold">AI & GenAI</div>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-300 font-medium">
+                NEW
+              </span>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-3 flex-1 content-start">
+              <motion.div
+                variants={iconVariants(2.5)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <SiOpenai className="text-4xl text-neutral-200" /> OpenAI
               </motion.div>
               <motion.div
                 variants={iconVariants(3)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <BiLogoPostgresql className="text-4xl text-sky-700" />{" "}
-                PostgreSQL
-              </motion.div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            whileInView={{ x: 0, opacity: 1 }}
-            initial={{ x: 100, opacity: 0 }}
-            transition={{ duration: 1.5 }}
-            className="border rounded-2xl border-neutral-500 px-10 py-10"
-          >
-            <div className="text-center text-2xl font-bold mb-10">
-              Other Tools
-            </div>
-            <div
-              className="flex flex-wrap items-center justify-center gap-4"
-              style={{ maxWidth: 500 }}
-            >
-              <motion.div
-                variants={iconVariants(2.5)}
-                initial="initial"
-                animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
-              >
-                <FaFigma className="text-4xl text-[#F24E1E]" /> Figma
+                <FaPython className="text-4xl text-yellow-400" /> Python
               </motion.div>
               <motion.div
                 variants={iconVariants(4)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <FaGit className="text-4xl text-[#F05032]" /> Git
+                <BiLogoPostgresql className="text-4xl text-sky-400" /> pgvector
               </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Tools & Platforms */}
+          <motion.div
+            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ x: 100, opacity: 0 }}
+            transition={{ duration: 1.5 }}
+            className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 sm:px-8 py-6 sm:py-8 h-auto md:h-[420px] flex flex-col"
+          >
+            <div className="text-center text-2xl font-bold mb-10">
+              Tools & Platforms
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-3 flex-1 content-start">
               <motion.div
-                variants={iconVariants(6)}
+                variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <FaGithub className="text-4xl" /> GitHub
+                <FaGit className="text-4xl text-orange-500" /> Git
+              </motion.div>
+              <motion.div
+                variants={iconVariants(4)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <FaGithub className="text-4xl text-neutral-200" /> GitHub
+                Actions
               </motion.div>
               <motion.div
                 variants={iconVariants(3)}
                 initial="initial"
                 animate="animate"
-                className="flex items-center justify-center gap-4 rounded-2xl border-4 border-neutral-800 p-4"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
               >
-                <SiVisualstudiocode className="text-4xl text-[#007ACC]" /> VS
-                Code
+                <FaAws className="text-4xl text-yellow-500" /> AWS
+              </motion.div>
+              <motion.div
+                variants={iconVariants(2)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <FaDocker className="text-4xl text-blue-400" /> Docker
+              </motion.div>
+              <motion.div
+                variants={iconVariants(5)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <FaFigma className="text-4xl text-pink-400" /> Figma
+              </motion.div>
+              <motion.div
+                variants={iconVariants(3.5)}
+                initial="initial"
+                animate="animate"
+                className="flex items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4"
+              >
+                <SiStripe className="text-4xl text-indigo-400" /> Stripe
               </motion.div>
             </div>
           </motion.div>

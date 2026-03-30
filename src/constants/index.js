@@ -1,6 +1,8 @@
 import project1 from "../assets/Playmate.svg";
 import project2 from "../assets/AmazonHub.svg";
 import project3 from "../assets/PetApp.svg";
+import project4 from "../assets/AIMemoryWebPage.png";
+import project5 from "../assets/meal_plan.png";
 import education1 from "../assets/NortheasternLogo.svg";
 import education2 from "../assets/SPPULogo.svg";
 import work from "../assets/InfosysLogo.svg";
@@ -47,15 +49,15 @@ export const EXPERIENCES = [
   {
     year: "July 2025 - Present",
     logo: work1,
-    role: "Frontend Developer",
+    role: "Frontend Engineer",
     company: "Nooon",
     description: [
-      "Contributing to the development of Nooon’s B2B marketplace platform, focused on connecting hotels with influencer marketing opportunities",
-      "Building responsive, performant React components with Tailwind CSS to deliver a clean, intuitive user interface for businesses and creators",
-      "Collaborating closely with product and design teams to translate wireframes into engaging, user-friendly experiences",
-      "Integrating API-driven features to streamline booking and partnership workflows between hotels and influencers",
-      "Enhancing platform usability with smooth animations, accessibility improvements, and optimized navigation",
-      "Actively participating in agile sprints, code reviews, and knowledge-sharing to improve overall engineering quality",
+      "Architected and shipped a subscription and billing system using Stripe APIs, Next.js, and PostgreSQL — supporting usage-based plan enforcement across 2,000+ influencers and 50+ hotel partners",
+      "Engineered server-rendered dashboards with parallelized data fetching in Next.js App Router, reducing page load times by 33%",
+      "Built and maintained a reusable React + Tailwind CSS component library across marketplace and analytics interfaces, cutting UI duplication and accelerating feature delivery by 18%",
+      "Integrated Google Places API with structured validation and fallback handling, reducing manual hotel onboarding effort by 40%",
+      "Translated high-fidelity Figma designs into accessible, production-ready React components, compressing design-to-development cycles by 30%",
+      "Contributed to CI/CD pipelines via GitHub Actions and led code reviews, improving deployment consistency and reducing production regressions",
     ],
     technologies: [
       "React",
@@ -73,12 +75,12 @@ export const EXPERIENCES = [
     role: "Software Engineer - Frontend",
     company: "Infosys",
     description: [
-      "Engineered scalable React and TypeScript components, ensuring reusability and performance across client projects",
-      "Translated Figma designs into responsive, accessible interfaces compliant with WCAG 2.1 standards",
-      "Integrated RESTful APIs to deliver real-time data and reliable user interactions",
-      "Improved app responsiveness and reduced bundle sizes with Next.js optimization techniques",
-      "Automated deployments with GitHub Actions, accelerating release cycles and reducing manual errors",
-      "Strengthened testing coverage with Jest and React Testing Library, raising overall product quality",
+      "Led frontend development for enterprise-grade React + TypeScript dashboards serving 10,000+ internal users, building reusable component libraries that accelerated feature delivery by 30%",
+      "Designed complex data visualization and reporting interfaces integrated with RESTful microservices, optimizing API interactions to improve response times by 25%",
+      "Refactored legacy UI modules into modular, component-driven architecture, decreasing frontend defects by 20% and improving long-term maintainability",
+      "Improved accessibility and responsive design across global teams by implementing WCAG 2.1 standards, enhancing cross-device usability",
+      "Applied data structure optimization techniques to improve rendering performance in data-intensive dashboards",
+      "Collaborated with backend, QA, and product teams to ensure seamless API integration and alignment on scalable, production-ready features",
     ],
     technologies: [
       "React",
@@ -93,14 +95,14 @@ export const EXPERIENCES = [
   {
     year: "March 2021 - August 2021",
     logo: work,
-    role: "Systems Engineer - UI developer",
+    role: "Systems Engineer",
     company: "Infosys",
     description: [
-      "Developed responsive web interfaces using HTML, CSS, and JavaScript, ensuring cross-browser compatibility",
-      "Built foundational React components to streamline development and improve maintainability",
-      "Partnered with QA teams to troubleshoot UI regressions and enhance defect resolution speed",
-      "Resolved browser rendering issues, improving consistency across Chrome, Safari, and Firefox",
-      "Enhanced UI reliability through debugging tools and validation of user flows",
+      "Developed responsive UI components using React, JavaScript, HTML, and CSS for enterprise applications serving global internal teams",
+      "Diagnosed and resolved cross-browser rendering issues across Chrome, Safari, and Firefox, reducing UI defects by 20%",
+      "Collaborated with backend teams working on Java-based services to ensure smooth REST API integration and consistent data rendering",
+      "Partnered with QA teams to identify and resolve UI regressions, improving defect resolution speed and overall release quality",
+      "Built foundational React component patterns that were adopted across the team, improving development consistency and maintainability",
     ],
     technologies: [
       "React",
@@ -115,12 +117,33 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "AI Memory Compression System",
+    image: project4,
+    description: [
+      "Built an AI memory persistence system that solves the long-context problem for LLMs",
+      "The system chunks and embeds conversation history into PostgreSQL with pgvector, retrieves semantically relevant memories using a 3-factor ranking algorithm (relevance + recency + importance), and compresses older messages into hierarchical summaries — reducing token usage by 85% while preserving long-term context recall",
+      "Built end-to-end with FastAPI, OpenAI GPT-4o-mini, and a React + TypeScript frontend featuring a real-time Memory Inspector panel",
+    ],
+    technologies: [
+      "Python",
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector",
+      "RAG Retrieval-Augmented Generation",
+      "LLM Memory Management",
+      "OpenAI GPT-4o-mini",
+    ],
+    link: "https://github.com/navaleprachi/AI_Memory_System",
+  },
+  {
     title: "PlayMate Web Application",
     image: project1,
     description: [
-      "Engineered a dynamic full-stack web development project for sports arena booking, which streamlined arena reservations for both individual and team activities",
-      "Leveraged React, Node.js, and Material UI to create intuitive user interfaces, while optimizing backend performance with MongoDB",
-      "This approach enhanced frontend accessibility and led to a 40% increase in booking activities",
+      "Built a full-stack sports community web application where athletes and fitness enthusiasts can discover venues, book facilities, join events, and connect with others",
+      "Implemented JWT authentication with access, refresh, and reset token flows, integrated Google Maps Platform API for location-based venue discovery, and built booking management workflows supporting 25+ facilities — with a 40% improvement in data retrieval performance via query optimization and caching",
+      "Built end-to-end with React, Node.js, Express, and MongoDB as a 4-person team using Agile practices",
     ],
     technologies: [
       "React",
@@ -131,6 +154,24 @@ export const PROJECTS = [
       "Restful APIs",
     ],
     link: "https://github.com/navaleprachi/PlayMate-Web-Application",
+  },
+  {
+    title: "Mealgorithm - Smart Student Life Manager iOS App",
+    image: project5,
+    description: [
+      "Built an AI-powered iOS app that helps university students manage groceries, plan meals, and track budgets in one unified experience",
+      "Integrated the Spoonacular API to deliver personalized, dietary-preference-based meal recommendations, built expiry-aware grocery tracking with daily push notifications, and implemented visual budget insights using Swift Charts — reducing food waste by up to 30% and saving students an estimated $50–$100/month",
+      "Built end-to-end with SwiftUI, Core Data, and MVVM architecture as a solo project",
+    ],
+    technologies: [
+      "SwiftUI",
+      "Core Data",
+      "MVVM",
+      "Spoonacular API",
+      "Swift Charts",
+      "Xcode",
+    ],
+    link: "https://github.com/navaleprachi/Mealgorithm",
   },
   {
     title: "Amazon Hub App",
@@ -160,5 +201,5 @@ export const PROJECTS = [
 export const CONTACT = {
   address: "Boston, MA 02130 ",
   phoneNo: "+1(857)654-8312 ",
-  email: "navale.p@northeastern.edu",
+  email: "prachi0407@gmail.com",
 };
