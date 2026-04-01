@@ -9,11 +9,13 @@ import Projects from "./components/Projects/Projects.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import ScrollProgressBar from "./components/ScrollProgressBar/ScrollProgressBar.jsx";
 import AnimatedBackground from "./components/AnimatedBackground/AnimatedBackground.jsx";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
       <ScrollProgressBar />
+      <Analytics />
       <AnimatedBackground />
 
       <div className="container mx-auto px-4 sm:px-8">
