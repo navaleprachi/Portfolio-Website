@@ -4,11 +4,11 @@
 
 **A fast, responsive, and modern developer portfolio built to showcase projects, skills, and professional experience.**
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-6366f1?style=for-the-badge)](https://prachinavale-portfolio.netlify.app/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-6366f1?style=for-the-badge)](https://prachinavale-portfolio.vercel.app/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://netlify.com)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 
 </div>
 
@@ -16,13 +16,13 @@
 
 ## 🔗 Live Site
 
-👉 **[prachinavale-portfolio.netlify.app](https://prachinavale-portfolio.netlify.app/)**
+👉 **[prachinavale-portfolio.vercel.app](https://prachinavale-portfolio.vercel.app/)**
 
 ---
 
 ## 📖 About
 
-This is my personal developer portfolio — designed to give recruiters and engineers a clear picture of who I am, what I've built, and how I work. Built from scratch using React + Vite + Tailwind CSS and deployed on Netlify with continuous deployment from GitHub.
+This is my personal developer portfolio — designed to give recruiters and engineers a clear picture of who I am, what I've built, and how I work. Built from scratch using React + Vite + Tailwind CSS and deployed on Vercel with continuous deployment from GitHub.
 
 ---
 
@@ -64,7 +64,7 @@ This is my personal developer portfolio — designed to give recruiters and engi
 | UI Framework | React (JavaScript) |
 | Build Tool | Vite |
 | Styling | Tailwind CSS |
-| Hosting & CI/CD | Netlify (auto-deploy from GitHub) |
+| Hosting & CI/CD | Vercel (auto-deploy from GitHub) |
 | Linting | ESLint |
 
 ---
@@ -132,14 +132,14 @@ Portfolio-Website/
 
 ## 🚢 Deployment
 
-This site is deployed on **Netlify** with continuous deployment — every push to `main` automatically triggers a new build and goes live within minutes.
+This site is deployed on **Vercel** with continuous deployment — every push to `main` automatically triggers a new build and goes live within minutes.
 
 To deploy your own fork:
 1. Push the repo to GitHub
-2. Connect it to [Netlify](https://netlify.com) → **New site from Git**
-3. Set build command: `npm run build`
-4. Set publish directory: `dist`
-5. Deploy — Netlify handles the rest
+2. Connect it to [Vercel](https://vercel.com) → **Add New Project**
+3. Import your GitHub repository
+4. Set framework preset to `Vite` (auto-detected in most cases)
+5. Deploy — Vercel handles the rest (build command and output directory are auto-configured)
 
 ---
 
@@ -148,7 +148,7 @@ To deploy your own fork:
 **Prachi Navale** — Frontend Engineer · MS Information Systems, Northeastern University
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prachi-navale/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=firefox&logoColor=white)](https://prachinavale-portfolio.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=flat-square&logo=firefox&logoColor=white)](https://prachinavale-portfolio.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/navaleprachi)
 
 ---
