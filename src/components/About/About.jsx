@@ -13,7 +13,7 @@ const STATS = [
 const FOCUS = [
   {
     icon: <RiReactjsLine className="text-xl text-cyan-400" />,
-    title: "Frontend Engineering",
+    title: "Software Engineering",
     desc: "React, Next.js, TypeScript — building performant, accessible UIs at scale.",
   },
   {
@@ -68,7 +68,7 @@ const About = () => {
               >
                 <p className="text-xs text-neutral-400 mb-0.5">Currently at</p>
                 <p className="text-xs sm:text-sm font-semibold text-purple-300">
-                  Nooon · Frontend Engineer
+                  Nooon · Software Engineer
                 </p>
               </motion.div>
             </div>
@@ -95,19 +95,19 @@ const About = () => {
             {/* Bio */}
             <div className="flex flex-col gap-3 text-neutral-400 text-sm leading-relaxed">
               <p>
-                I'm a Frontend Engineer with a Master's in Information Systems
+                I'm a Software Engineer with a Master's in Information Systems
                 from Northeastern University. I specialize in building scalable,
                 responsive web applications at the intersection of design and
-                engineering — where clean code meets thoughtful UX.
+                engineering where clean code meets thoughtful UX.
               </p>
               <p>
                 Currently at{" "}
                 <span className="text-purple-300 font-medium">Nooon</span>, I'm
                 shaping a B2B marketplace connecting hotels with influencer
-                marketing — building subscription flows, payment integrations,
-                and data-driven UIs with React, Next.js, and Stripe. Before
-                that, I delivered enterprise-grade interfaces for global clients
-                at <span className="text-purple-300 font-medium">Infosys</span>.
+                marketing building subscription flows, payment integrations, and
+                data-driven UIs with React, Next.js, and Stripe. Before that, I
+                delivered enterprise-grade interfaces for global clients at{" "}
+                <span className="text-purple-300 font-medium">Infosys</span>.
               </p>
             </div>
 

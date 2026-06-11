@@ -18,7 +18,7 @@ const Hero = () => {
 
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Frontend Engineer", "Software Engineer", "UI/UX Designer"];
+  const toRotate = ["Software Engineer", "Full-Stack & AI Engineer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(200 - Math.random() * 50);
   const period = 1500;
@@ -57,16 +57,6 @@ const Hero = () => {
         <div className="w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           {/* ── Left column ── */}
           <div className="flex-1 flex flex-col gap-5 items-center text-center lg:items-start lg:text-left">
-            {/* Greeting */}
-            {/* <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="text-sm font-mono tracking-widest text-purple-400 uppercase"
-            >
-              Hello, World 👋
-            </motion.p> */}
-
             {/* Name — word by word */}
             <motion.h1
               initial="hidden"
@@ -122,7 +112,7 @@ const Hero = () => {
             >
               {/* Resume button */}
               <a
-                href="https://drive.google.com/file/d/1xU-H6ENdNGI5okbDmjyBEiAzKZ_m5Zso/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1COAwkLmPbM5OfD9V0JVibEryP0icUnsL/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >

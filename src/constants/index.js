@@ -49,7 +49,7 @@ export const EXPERIENCES = [
   {
     year: "July 2025 - Present",
     logo: work1,
-    role: "Frontend Engineer",
+    role: "Software Engineer",
     company: "Nooon",
     description: [
       "Architected and shipped a subscription and billing system using Stripe APIs, Next.js, and PostgreSQL — supporting usage-based plan enforcement across 2,000+ influencers and 50+ hotel partners",
@@ -70,9 +70,9 @@ export const EXPERIENCES = [
     ],
   },
   {
-    year: "September 2021 - August 2023",
+    year: "March 2021 - August 2023",
     logo: work,
-    role: "Software Engineer - Frontend",
+    role: "Software Engineer",
     company: "Infosys",
     description: [
       "Led frontend development for enterprise-grade React + TypeScript dashboards serving 10,000+ internal users, building reusable component libraries that accelerated feature delivery by 30%",
@@ -90,27 +90,6 @@ export const EXPERIENCES = [
       "GitHub Actions",
       "Jest",
       "CI/CD",
-    ],
-  },
-  {
-    year: "March 2021 - August 2021",
-    logo: work,
-    role: "Systems Engineer",
-    company: "Infosys",
-    description: [
-      "Developed responsive UI components using React, JavaScript, HTML, and CSS for enterprise applications serving global internal teams",
-      "Diagnosed and resolved cross-browser rendering issues across Chrome, Safari, and Firefox, reducing UI defects by 20%",
-      "Collaborated with backend teams working on Java-based services to ensure smooth REST API integration and consistent data rendering",
-      "Partnered with QA teams to identify and resolve UI regressions, improving defect resolution speed and overall release quality",
-      "Built foundational React component patterns that were adopted across the team, improving development consistency and maintainability",
-    ],
-    technologies: [
-      "React",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Browser Testing",
-      "Debugging",
     ],
   },
 ];
